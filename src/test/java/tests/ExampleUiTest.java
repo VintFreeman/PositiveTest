@@ -10,11 +10,11 @@ public class ExampleUiTest extends BaseTest {
     @DisplayName("Открытие главной страницы сайта")
     void testOpenMainPage() {
 
-
-
-        new MainPage()
-                .chackVisibleLoginButton();
-
-
+        MainPage MainPage = new MainPage();
+        MainPage.clickLoginButton();
+        MainPage.inputData();
+        MainPage.checkStatus();
     }
+
+
 }
