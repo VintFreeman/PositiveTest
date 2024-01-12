@@ -7,14 +7,14 @@ import pages.MainPage;
 public class ExampleUiTest extends BaseTest {
 
     @Test
-    @DisplayName("Открытие главной страницы сайта")
+    @DisplayName("Успешное прохождение аутентификации")
     void testOpenMainPage() {
 
-
-
-        new MainPage()
-                .chackVisibleLoginButton();
-
-
+        MainPage MainPage = new MainPage();
+        MainPage.clickLoginButton();
+        MainPage.inputData();
+        MainPage.checkStatus();
     }
+
+
 }
